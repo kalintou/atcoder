@@ -1,3 +1,7 @@
+/*
+そのまま入力されたものを、二倍にして出力でOK
+*/
+
 #include <iostream>
 #include <cstdio>
 #include <string>
