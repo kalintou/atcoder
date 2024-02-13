@@ -3,6 +3,8 @@
         "*.yarnproject": "jsonc",
         "algorithm": "cpp",
         "iostream": "cpp",
-        "utility": "cpp"
+        "utility": "cpp",
+        "functional": "cpp",
+        "iterator": "cpp"
     }
 }
