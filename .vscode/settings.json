@@ -5,6 +5,9 @@
         "iostream": "cpp",
         "utility": "cpp",
         "functional": "cpp",
-        "iterator": "cpp"
+        "iterator": "cpp",
+        "numeric": "cpp",
+        "set": "cpp",
+        "unordered_map": "cpp"
     }
 }

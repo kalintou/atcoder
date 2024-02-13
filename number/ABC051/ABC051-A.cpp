@@ -33,55 +33,19 @@ typedef long long ll;
 const int MOD = 1000000007;  // 1 000 000 007
 
 int main() {
+    string str;
+    cin >> str;
+    string s = "";
 
-    int n;
-    cin >> n;
+    REP(i, str.size()) {
+        if (str[i] == ',') {
+            cout << s << " ";
+            s = "";
+        }
+        else s += str[i];
+    }
+    cout << s;
 
-    if (n % 2 == 0) {
-        unordered_map<int, int> map;
-        REP(i, n) {
-            int tmp; cin >> tmp;
-            if (tmp % 2 == 0) {
-                cout << 0;
-                return 0;
-            }
-            map[tmp]++;
-        }
-        for (auto& m : map) {
-            if (m.second != 2) {
-                cout << 0;
-                return 0;
-            }
-        }
-    }
-    else {
-        unordered_map<int, int> map;
-        REP(i, n) {
-            int tmp; cin >> tmp;
-            if (tmp % 2 == 1) {
-                cout << 0;
-                return 0;
-            }
-            map[tmp]++;
-        }
-        for (auto& m : map) {
-            if (m.first != 0 && m.second != 2) {
-                cout << 0;
-                return 0;
-            }
-            else if (m.first == 0 && m.second != 1) {
-                cout << 0;
-                return 0;
-            }
-            
-        }
-    }
-    ll res = 1;
-    REP(i, n / 2) {
-        res = 2 * res % MOD;
-    }
-    cout << res;
-    
 
 
     return 0;
