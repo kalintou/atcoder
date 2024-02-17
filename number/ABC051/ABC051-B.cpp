@@ -1,8 +1,6 @@
 /*
 これはちょっと答えを見ちゃったよね、
 考えてみれば簡単だけど、。。。。
-
-
 https://compro.asukatagui.com/abc051b/
 */
 
